@@ -11,10 +11,9 @@ const playerSchema = new Schema ({
     playerHeight: { type: String, trim: true },
     playerWeight: { type: String, trim: true },
     playerBats: { type: String, trim: true },
-    playerThrows: { type: String, trim: true },
-}, {
-    timestamps: true,
-});
+    playerThrows: { type: String, trim: true }
+}
+);
 
 const Player = mongoose.model('Player', playerSchema);
 

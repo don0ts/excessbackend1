@@ -12,7 +12,6 @@ router.route('/add').post((req, res) => {
     const playerName = req.body.playerName;
     const playerPosition = req.body.playerPosition;
     const playerPOB = req.body.playerPOB;
-    const playerID = req.body.playerID;
     const playerHeight = req.body.playerHeight;
     const playerWeight = req.body.playerWeight;
     const playerBats = req.body.playerBats;
@@ -25,7 +24,6 @@ router.route('/add').post((req, res) => {
         playerName,
         playerPosition,
         playerPOB,
-        playerID,
         playerHeight,
         playerWeight,
         playerBats,
@@ -60,7 +58,6 @@ router.route('/update/:id').put((req, res) => {
             Player.playerName = req.body.playerName;
             Player.playerPosition = req.body.playerPosition;
             Player.playerPOB = req.body.playerPOB;
-            Player.playerID = req.body.playerID;
             Player.playerHeight = req.body.playerHeight;
             Player.playerWeight = req.body.playerWeight;
             Player.playerBats = req.body.playerBats;
