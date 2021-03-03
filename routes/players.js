@@ -17,7 +17,7 @@ router.route('/add').post((req, res) => {
     const playerWeight = req.body.playerWeight;
     const playerBats = req.body.playerBats;
     const playerThrows = req.body.playerThrows;
-    const playerDOB = Date.parse(req.body.playerDOB);
+    const playerDOB = req.body.playerDOB;
     const playerClass = req.body.playerClass;
 
     const newPlayer = new Player({
@@ -65,7 +65,7 @@ router.route('/update/:id').put((req, res) => {
             Player.playerWeight = req.body.playerWeight;
             Player.playerBats = req.body.playerBats;
             Player.playerThrows = req.body.playerThrows;
-            Player.playerDOB = Date.parse(req.body.playerDOB);
+            Player.playerDOB = req.body.playerDOB;
             Player.playerClass = req.body.playerClass;
 
             Player.save()

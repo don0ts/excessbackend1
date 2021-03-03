@@ -7,7 +7,7 @@ const playerSchema = new Schema ({
     playerName: { type: String , trim: true },
     playerPosition: { type: String, trim: true },
     playerClass: { type: Number, trim: true },
-    playerDOB: { type: Date },
+    playerDOB: { type: String, trim: true },
     playerHeight: { type: String, trim: true },
     playerWeight: { type: String, trim: true },
     playerBats: { type: String, trim: true },
